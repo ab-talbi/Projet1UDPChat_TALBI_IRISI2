@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.PerspectiveTransform?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerPane" prefHeight="350.0" prefWidth="560.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="client.ClientRegisterController">
+   <children>
+      <AnchorPane prefHeight="350.0" prefWidth="159.0" style="-fx-background-color: #15325D;">
+         <children>
+            <ImageView fx:id="logoImageView" fitHeight="64.0" fitWidth="200.0" layoutX="27.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../IdeaProjects/Projet1UDPChat_TALBI_IRISI2/Images/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="311.0" text="TALBI Ayoub" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="282.0" text="Réalisé par :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="161.0" prefHeight="350.0" prefWidth="399.0" style="-fx-background-color: #E0E7EC;">
+         <children>
+            <TextField fx:id="prenomInput" layoutX="211.0" layoutY="70.0" prefHeight="30.0" prefWidth="146.0" promptText="Saisir votre prenom">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="42.0" layoutY="50.0" text="Nom" textFill="#002365">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomInput" layoutX="42.0" layoutY="70.0" prefHeight="25.0" prefWidth="146.0" promptText="Saisir votre nom">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="213.0" layoutY="50.0" text="Prenom" textFill="#002365">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameInput" layoutX="41.0" layoutY="131.0" prefHeight="30.0" prefWidth="317.0" promptText="Saisir un nom d'utilisateur">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="42.0" layoutY="111.0" text="Nom d'utilisateur" textFill="#002365">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="174.0" text="Mot de passe" textFill="#002365">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordInput" layoutX="41.0" layoutY="194.0" prefHeight="30.0" prefWidth="317.0" promptText="Saisir un mot de passe">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="errorMessageRegister" layoutX="42.0" layoutY="239.0" prefHeight="16.0" prefWidth="317.0" textFill="#ff1515">
+               <font>
+                  <Font name="Arial Black" size="11.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="-161.0" prefHeight="37.0" prefWidth="560.0" style="-fx-background-color: #001234;">
+               <children>
+                  <Label layoutX="161.0" prefHeight="37.0" prefWidth="291.0" text="Creer un nouveau compte" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                     <effect>
+                        <Blend>
+                           <topInput>
+                              <PerspectiveTransform />
+                           </topInput>
+                        </Blend>
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="registerButton" layoutX="306.0" layoutY="272.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #002365;" text="Creer Le Compte" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="annulerButton" layoutX="203.0" layoutY="272.0" mnemonicParsing="false" onAction="#annulerButtonOnAction" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #2B2B2C;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="versLoginButton" layoutX="172.0" layoutY="310.0" mnemonicParsing="false" onAction="#versLoginButtonOnAction" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #E0E7EC;" text="Vous avez deja un compte? Se connecter" textFill="#4238b0">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
