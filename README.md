@@ -1,4 +1,4 @@
-# Projet1UDPChat_TALBI_IRISI2
+# UDP Chat App
 
 
 Il y a deux packages, client et serveur
